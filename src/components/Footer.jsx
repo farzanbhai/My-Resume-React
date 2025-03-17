@@ -1,6 +1,7 @@
 // src/components/Footer.jsx
 import { motion } from "framer-motion";
 import { FaLinkedin, FaGithub, FaEnvelope, FaArrowUp } from "react-icons/fa";
+import { SiFreelancer } from "react-icons/si";
 
 const Footer = () => {
   // Animation variants
@@ -109,6 +110,12 @@ const Footer = () => {
                 className="text-gray-200 hover:text-white transition duration-300"
               >
                 <FaEnvelope className="text-2xl" />
+              </a>
+              <a
+                href="https://www.freelancer.com/u/muhammadfarzan58"
+                className="text-gray-200 hover:text-white transition duration-300"
+              >
+              <SiFreelancer className="text-2xl" />
               </a>
             </div>
             
