@@ -1,0 +1,16 @@
+/* src/styles/global.css */
+:root {
+  --background-color: #ffffff; /* Light mode background */
+  --text-color: #000000; /* Light mode text */
+}
+
+[data-theme="dark"] {
+  --background-color: #121212; /* Dark mode background */
+  --text-color: #ffffff; /* Dark mode text */
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}

@@ -1,0 +1,82 @@
+/* src/components/Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-logo a {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #222;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin: 0 auto;
+  padding: 0;
+  flex: 1;
+  justify-content: center;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: #222;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.navbar-links li a:hover {
+  color: #007bff;
+}
+
+.search-input {
+  padding: 0.5rem;
+  border: none;
+  background: transparent;
+  width: 150px;
+  font-size: 1rem;
+}
+
+.search-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.search-icon {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  transition: color 0.3s;
+}
+
+.search-icon:hover {
+  color: #007bff;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .navbar-search {
+    margin-top: 1rem;
+  }
+}
